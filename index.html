@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        var squirtle = {
+            height: "2 ft ",
+            type: "water ",
+            tail: "curly ",
+            ability: "water gun ",
+            wins: 400,
+            faints: 200,
+            isHealthy: "false",
+
+
+            squirtleFight: function () {
+
+                alert("Squirtle is " + this.height)
+                alert("Squirtle is ready to fight! Wins: " + this.wins)
+
+                this.wins = this.wins + 1
+
+                alert("Squirtle won! Wins: " + this.wins);
+
+            },
+
+            squirtleHealthy: function() {
+                alert("Squirtle needs to go to the pokemon center! Healthy: " + this.isHealthy)
+
+                this.isHealthy = "true"
+
+                alert("Squirtle just got his wounds treated. Healthy: " + this.isHealthy);
+
+            }
+        }
+
+        //logging
+
+        console.log(squirtle.height)
+        squirtle.squirtleFight();
+
+        console.log(squirtle.type)
+        squirtle.squirtleHealthy();
+
+        console.log(squirtle.tail)
+
+        console.log(squirtle.ability)
+
+        console.log(squirtle.wins)
+
+        console.log(squirtle.faints)
+
+        console.log(squirtle.isHealthy)
+
+
+    </script>
+</body>
+
+</html>
